@@ -13,6 +13,10 @@ const HeroSection = styled.div`
   .text {
     max-width: 600px;
   }
+  .profile img {
+  background: transparent !important;
+  box-shadow: none !important;
+}
 
   h1 {
     font-size: 72px;
@@ -56,28 +60,23 @@ const HeroSection = styled.div`
     position: relative;
   }
 
-  .circle {
-    width: 450px;
-    height: 450px;
-    background: #8a4cff;
-    border-radius: 50%;
-    position: absolute;
-    top: -50px;
-    left: -50px;
-    z-index: -1;
-  }
+  /* Removed the .circle styles */
 
   .profile img {
-    width: 350px;
+    width: 650px; /* Bigger image */
     border-radius: 10px;
   }
+  
 `;
 
 const Hero = () => {
   return (
     <HeroSection>
       <div className="text">
-        <h1>Hello!<br />I’m <strong>Tanishk Singh</strong></h1>
+        <h1>
+          Hello!<br />
+          I’m <strong>Tanishk Singh</strong>
+        </h1>
         <p>Fullstack Web Developer</p>
         <div className="cta">
           <ScrollLink to="contact" smooth={true} duration={800} offset={-70}>
@@ -89,8 +88,7 @@ const Hero = () => {
         </div>
       </div>
       <div className="profile">
-        <div className="circle"></div>
-        <img src="/profile.png" alt="Tanishk Singh" />
+        <img src="/profile2.png" alt="Tanishk Singh" />
       </div>
     </HeroSection>
   );

@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const AboutSection = styled.div`
-  padding: 70px 40px;
+  padding: 130px 20px; /* Slightly increased gap above and below */
   text-align: center;
-  min-height: 100vh;
   background: #121212;
   display: flex;
   flex-direction: column;
